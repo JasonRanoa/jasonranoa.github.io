@@ -2,6 +2,7 @@
 layout: default
 title: Resume
 nav_order: 2
+permalink: /resume
 ---
 
 ## Jason Ranoa
