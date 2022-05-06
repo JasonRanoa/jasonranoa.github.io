@@ -74,3 +74,9 @@ ol.lower-alpha li::before {
 .problem_stmt ol p:last-child {
   margin-bottom: 0em;
 }
+
+.post-question-feedback-button {
+  float: right;
+  position: relative;
+  top: 6px;
+}

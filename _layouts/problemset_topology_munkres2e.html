@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div style='display: none'>
+$\newcommand{\R}{\mathbb{R}}$
+$\newcommand{\Z}{\mathbb{Z}}$
+$\newcommand{\N}{\mathbb{N}}$
+$\newcommand{\set}[1]{\{#1\}}$
+$\newcommand{\ket}[1]{\langle#1\rangle}$
+
+<script>
+function appendButton(element) {
+  var button = document.createElement('a');
+  button.classList.add('btn');
+  button.classList.add('btn-green');
+  button.classList.add('post-question-feedback-button');
+  button.classList.add('fs-1');
+  button.innerHTML = "GIVE FEEDBACK";
+
+  var header_obj = element.getElementsByTagName('h3')[0];
+
+  let email = 'jasonranoa1102@gmail.com';
+  let subject = 'Feedback on Topology, Munkres Solutions - ' + header_obj.innerText;
+  let content = 'Hi. There seems to be an issue with your solution to ' + header_obj.innerText + ' for Topology, Munkres 2e.';
+
+  button.href = 'mailto:' + email + '?subject=' + subject + '&body=' + content;
+  button.target = "_blank";
+  element.appendChild(button);
+  return null;
+}
+
+function addQnButtons() {
+  els = document.getElementsByClassName('problem_stmt');
+  for (let i=0; i < els.length; i++) {
+    appendButton(els[i]);
+  }
+  return null;
+}
+</script>
+
+</div>
+
+<h1>{{ page.title }}</h1>
+{% if page.description %} {{page.description}} {% endif %}
+
+<div class='problemset_container'>
+
+{{ content }}
+
+</div>
+
+<script>
+  addQnButtons();
+</script>
