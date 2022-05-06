@@ -22,13 +22,37 @@ ol.lower-alpha li::before {
 
 .problem_stmt {
   display: block;
-  border: 1px solid #41d693;
+  border: 1px solid #e6e1e8;
   border-radius: 3px;
   padding: 1em
 }
 
-.problem_stmt h3, h4 {
+.problem_stmt h3, .problem_stmt h4 {
+  color: #27262b;
+}
+
+.problem_stmt.completed {
+  border: 1px solid #41d693;
+}
+
+.problem_stmt.completed h3, .problem_stmt.completed h3 {
   color: #009c7b;
+}
+
+.problem_stmt.in_progress {
+  border: 1px solid #ffeb82;
+}
+
+.problem_stmt.in_progress h3, .problem_stmt.in_progress h3 {
+  color: #e7af06;
+}
+
+.problem_stmt.has_issues {
+  border: 1px solid #f77e7e;
+}
+
+.problem_stmt.has_issues h3, .problem_stmt.has_issues h3 {
+  color: #dd2e2e;
 }
 
 .problem_notes::before {
@@ -39,6 +63,38 @@ ol.lower-alpha li::before {
   letter-spacing: 0.1em;
   font-weight: 400;
   display: block;
+}
+
+.in_progress .problem_notes::before {
+  color: #e7af06;
+}
+
+.has_issues .problem_notes::before {
+  color: #dd2e2e;
+}
+
+.problem_stmt.in_progress::before {
+  content: "This section is in progress.";
+  display: block;
+  background-color: #e7af06;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  font-size: smaller;
+}
+
+.problem_stmt.has_issues::before {
+  content: "There are some issues with this solution.";
+  display: block;
+  background-color: #dd2e2e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  font-size: smaller;
 }
 
 .problem_notes p {
@@ -64,7 +120,7 @@ ol.lower-alpha li::before {
 
 .issue {
   font-size: smaller;
-  color: red;
+  color: #dd2e2e;
 }
 
 .problem_stmt ol p:first-child {
@@ -79,4 +135,19 @@ ol.lower-alpha li::before {
   float: right;
   position: relative;
   top: 6px;
+}
+
+.post-question-feedback-button {
+  float: right;
+  position: relative;
+  top: 6px;
+  background-image: none;
+}
+
+.in_progress .post-question-feedback-button {
+  background-color: #e7af06;
+}
+
+.has_issues .post-question-feedback-button {
+  background-color: #dd2e2e;
 }
