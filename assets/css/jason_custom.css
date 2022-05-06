@@ -10,6 +10,10 @@ ol.lower-alpha li::before {
   margin-bottom: 0
 }
 
+.remove-top-margin {
+  margin-top: 0
+}
+
 .add-indent {
   text-indent: 1em
 }
@@ -25,4 +29,48 @@ ol.lower-alpha li::before {
 
 .problem_stmt h3, h4 {
   color: #009c7b;
+}
+
+.problem_notes::before {
+  content: 'NOTES.';
+  font-size: 10px;
+  color: #009c7b;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
+}
+
+.problem_notes p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em
+}
+
+.problem_notes p:first-child {
+  margin-top: 0px;
+}
+
+.problem_notes {
+  padding-left: 7px;
+  border-left: 1px solid #eeebee;
+  color: #959396;
+  font-size: smaller
+}
+
+.note {
+  font-size: smaller;
+  color: #959396;
+}
+
+.issue {
+  font-size: smaller;
+  color: red;
+}
+
+.problem_stmt ol p:first-child {
+  margin-top: 0em;
+}
+
+.problem_stmt ol p:last-child {
+  margin-bottom: 0em;
 }
