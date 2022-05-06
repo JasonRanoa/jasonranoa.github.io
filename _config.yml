@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jason's Sandbox
-# description: A Jekyll theme for documentation
+description: It's a sandbox. Anything goes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonranoa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -64,11 +64,13 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Jason Ranoa on GitHub":
+  "Visit me at GitHub":
     - "//github.com/jasonranoa"
+  "Email me @ jasonranoa1102@gmail.com":
+    - "mailto: jasonranoa1102@gmail.com"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil

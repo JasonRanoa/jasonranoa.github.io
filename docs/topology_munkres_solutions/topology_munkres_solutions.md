@@ -9,5 +9,7 @@ permalink: topology_munkres_solutions
 # Solutions to Munkres, Topology
 {: .no_toc }
 
-Here are solutions to selected problems in the textbook, Topology by Munkres 2e, sorted by chapter.
+Here are my solutions to selected problems in the textbook, Topology by Munkres 2e, sorted by chapter.
 {: .fs-6 .fw-300 }
+
+Please note that these solutions may be incorrect. If you've found an error, please let me know via my email, jasonranoa1102@gmail.com.
