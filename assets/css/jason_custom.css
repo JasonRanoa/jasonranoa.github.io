@@ -18,6 +18,11 @@ ol.lower-alpha li::before {
   text-indent: 1em
 }
 
+.add-bottom-margin {
+  margin-bottom: 1em
+}
+
+
 /* Problem Set Styling */
 
 .problem_stmt {
@@ -129,6 +134,35 @@ ol.lower-alpha li::before {
   border-left: 1px solid #eeebee;
   color: #959396;
   font-size: smaller
+}
+
+.problem_issue {
+  padding: 10px;
+  margin: 3px 0px;
+  border: 1px solid #dd2e2e;
+  color: white;
+  font-size: smaller;
+  border-radius: 3px;
+  background-color: #dd2e2e
+}
+
+.problem_issue p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em
+}
+
+.problem_issue p:first-child {
+  margin-top: 0px;
+}
+
+.problem_issue::before {
+  content: 'ISSUE.';
+  font-size: 10px;
+  color: white;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
 }
 
 .note {
