@@ -31,11 +31,17 @@ ol.lower-alpha li::before {
   color: #27262b;
 }
 
+.problem_stmt img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .problem_stmt.completed {
   border: 1px solid #41d693;
 }
 
-.problem_stmt.completed h3, .problem_stmt.completed h3 {
+.problem_stmt.completed h3, .problem_stmt.completed h4 {
   color: #009c7b;
 }
 
@@ -43,7 +49,7 @@ ol.lower-alpha li::before {
   border: 1px solid #ffeb82;
 }
 
-.problem_stmt.in_progress h3, .problem_stmt.in_progress h3 {
+.problem_stmt.in_progress h3, .problem_stmt.in_progress h4 {
   color: #e7af06;
 }
 
@@ -51,7 +57,7 @@ ol.lower-alpha li::before {
   border: 1px solid #f77e7e;
 }
 
-.problem_stmt.has_issues h3, .problem_stmt.has_issues h3 {
+.problem_stmt.has_issues h3, .problem_stmt.has_issues h4 {
   color: #dd2e2e;
 }
 
