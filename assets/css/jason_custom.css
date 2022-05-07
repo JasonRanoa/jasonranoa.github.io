@@ -73,6 +73,18 @@ ol.lower-alpha li::before {
   color: #dd2e2e;
 }
 
+.problem_stmt.completed::before {
+  content: "This problem has been solved.";
+  display: block;
+  background-color: #009c7b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  font-size: smaller;
+}
+
 .problem_stmt.in_progress::before {
   content: "This section is in progress.";
   display: block;
@@ -142,6 +154,11 @@ ol.lower-alpha li::before {
   position: relative;
   top: 6px;
   background-image: none;
+  background-color: #959396;
+}
+
+.completed .post-question-feedback-button {
+  background-color: #009c7b;
 }
 
 .in_progress .post-question-feedback-button {
