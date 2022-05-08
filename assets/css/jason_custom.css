@@ -139,16 +139,21 @@ ol.lower-alpha li::before {
 .problem_issue {
   padding: 10px;
   margin: 3px 0px;
+  padding-left: 40px;
   border: 1px solid #dd2e2e;
   color: white;
   font-size: smaller;
   border-radius: 3px;
-  background-color: #dd2e2e
+  background-image: url('/assets/images/problem_set_issue_background.png');
+  background-color: #dd2e2e;
+  background-position: top 8px left 8px;
+  background-repeat: no-repeat;
+  background-size: 25px;
 }
 
 .problem_issue p {
   margin-bottom: 0.5em;
-  margin-top: 0.5em
+  margin-top: 0.5em;
 }
 
 .problem_issue p:first-child {
@@ -165,7 +170,7 @@ ol.lower-alpha li::before {
   display: block;
 }
 
-.note {
+.note, .comment, .notes {
   font-size: smaller;
   color: #959396;
 }
@@ -187,6 +192,12 @@ ol.lower-alpha li::before {
   float: right;
   position: relative;
   top: 6px;
+}
+
+@media print {
+  .post-question-feedback-button {
+    display: none;
+  }
 }
 
 .post-question-feedback-button {
