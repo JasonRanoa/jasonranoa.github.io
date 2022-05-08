@@ -188,6 +188,11 @@ ol.lower-alpha li::before {
   margin-bottom: 0em;
 }
 
+.problem_stmt ol p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .post-question-feedback-button {
   float: right;
   position: relative;
