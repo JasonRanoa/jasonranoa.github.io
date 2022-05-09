@@ -136,6 +136,10 @@ ol.lower-alpha li::before {
   font-size: smaller
 }
 
+.problem_notes ol > li::before {
+  font-size: 9px !important;
+}
+
 .problem_issue {
   padding: 10px;
   margin: 3px 0px;
