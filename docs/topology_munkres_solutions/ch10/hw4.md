@@ -2,7 +2,7 @@
 layout: problemset_topology_munkres2e
 title: Homework 4
 parent: (hidden)
-permalink: topology_munkres_solutions/hw4
+permalink: hidden/mth_532_hw5
 nav_order: 1
 ---
 
