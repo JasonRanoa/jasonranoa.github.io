@@ -1,15 +1,42 @@
 ---
 layout: problemset_topology_munkres2e
-title: Section 74 Fundamental Group of Surfaces
-parent: Chapter 12 Classification of Surfaces
-grand_parent: Topology, Munkres 2e Solutions
-permalink: topology_munkres_solutions/section74
-nav_order: 74
+title: Homework 6
+parent: (hidden)
+permalink: hidden/mth_532_hw6
+nav_order: 1
 ---
 
 * TOC
 {:toc}
-References.
+
+---
+
+<div class='problem_stmt completed' markdown='1'>
+
+### Problem 73.1
+Find spaces whose fundamental groups are isomorphic to the following groups.
+{: .remove-bottom-margin}
+1. $\Z_n \times \Z_m$.
+2. $\Z_{n_1} \times \Z_{n_2} \times \dots \times \Z_{n_k}$.
+3. $\Z_n * \Z_m$. (See Exercise 71.2)
+4. $\Z_{n_1} * \Z_{n_2} * \dots * \Z_{n_k}$.
+{: .lower-alpha}
+
+{: .no_toc}
+#### Answer.
+For the answers below, let $D^n$ represent the $n$-fold dunce cap. Then, from Theorem 73.4, $\fundgroup(D^n) = \Z_n$.
+{: .remove-bottom-margin}
+1. $D^n \times D^m$.
+2. $D^{n_1} \times \dots \times D^{n_k}$.
+3. $D^n \vee D^m$.
+4. $D^{n_1} \vee \dots \vee D^{n_k}$.
+{: .lower-alpha}
+
+For items (1) and (2), we can use Theorem 60.1 (the fundamental group of a product is the product of fundamental groups).
+
+For items (3) and (4), we can use Exercise 71.2. Recall that the $n$-fold dunce cap $D^k$ is formed from $B^2$ by some identification of points on the boundary $S_1$. Let $p \in (B^2)^\circ$. Then, there exists $r > 0$ such that $B_r(p) \subseteq (B^2)^\circ$. Here, $B_r(p)$ is open in $D^k$ and $\set{p}$ is a deformation retract of $B_r(p)$, satisfying the conditions of Exercise 71.2. Then, $D^{n_1} \vee \dots \vee D^{n_k}$ is the wedge on $p$.
+
+</div>
 
 ---
 
