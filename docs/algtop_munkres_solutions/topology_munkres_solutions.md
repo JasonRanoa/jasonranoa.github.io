@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Algebraic Topology, Munkres Solutions
+title: Elements of Algebraic Topology, Munkres Solutions
 nav_order: 4
 has_children: true
 permalink: algtop_munkres_solutions

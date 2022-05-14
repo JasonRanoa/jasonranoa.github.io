@@ -196,7 +196,7 @@ ol.lower-alpha li::before {
 }
 
 .problem_stmt ol p:last-child {
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
 }
 
 .problem_stmt ol p {
