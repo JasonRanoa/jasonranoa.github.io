@@ -8,6 +8,11 @@ ol.lower-alpha li::before {
   content: counter(step-counter, lower-alpha) '.'
 }
 
+ol.lower-roman li::before {
+  content: counter(step-counter, lower-roman) '.'
+}
+
+
 .remove-bottom-margin {
   margin-bottom: 0
 }

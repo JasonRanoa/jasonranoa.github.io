@@ -7,7 +7,7 @@ has_children: true
 permalink: algtop_munkres_solutions/chapter1
 ---
 
-# Chapter 9 The Fundamental Group
+# {{page.title}}
 {: .no_toc }
 
 Something here.
