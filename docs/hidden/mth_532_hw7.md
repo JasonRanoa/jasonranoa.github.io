@@ -75,7 +75,7 @@ $$
   }
 $$
 
-We can re-parametrize our generating set by defining $e = a+b+d$. Since $e = a+b+d$ and $d = e-a-b$, $e$ is also a generator. Then, considering the generating set,
+We can re-parametrize our generating set by defining $e = a+c+d$. Since $e = a+c+d$ and $d = e-a-c$, $e$ is also a generator. Then, considering the generating set,
 
 $$
   \ket{a,b,c,d} = \ket{a,b,c,a+b+d} = \ket{a,b,c,e}
